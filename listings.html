@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Listings - Mahi Real Estate | Addis Ababa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Page Transition Overlay -->
+    <div class="page-transition-overlay" id="pageTransition"></div>
+
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <span class="moon">🌙</span>
+        <span class="sun">☀️</span>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo-link"><img src="image.png" alt="Mahi Real Estate Logo" class="logo-img"></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="listings.html" class="active">Properties</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="min-height: 40vh; padding: 120px 0 60px;">
+        <div class="container">
+            <div class="hero-content" style="max-width: 100%; text-align: center;">
+                <h1>Property Listings</h1>
+                <p>Discover the finest homes, apartments, and investment properties in Addis Ababa</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section style="padding: 30px 0; background: var(--gray-light);">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Properties</button>
+                <button class="filter-btn" data-filter="sale">For Sale</button>
+                <button class="filter-btn" data-filter="rent">For Rent</button>
+                <button class="filter-btn" data-filter="sold">Sold</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Property Grid -->
+    <section>
+        <div class="container">
+            <div class="property-grid" id="propertyGrid">
+                <!-- Property 1: For Sale -->
+                <div class="property-card" data-category="sale">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600" alt="Luxury Villa in Bole">
+                        <span class="property-badge">For Sale</span>
+                    </div>
+                    <div class="property-info">
+                        <div class="property-price">15,500,000 Birr</div>
+                        <div class="property-address">Bole, Addis Ababa</div>
+                        <div class="property-features">
+                            <span>🛏️ 5 Beds</span>
+                            <span>🛁 4 Baths</span>
+                            <span>📐 450 m²</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 2: For Rent -->
+                <div class="property-card" data-category="rent">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600" alt="Modern Apartment in Kazanchis">
+                        <span class="property-badge rent">For Rent</span>
+                    </div>
+                    <div class="property-info">
+                        <div class="property-price">45,000 Birr/mo</div>
+                        <div class="property-address">Kazanchis, Addis Ababa</div>
+                        <div class="property-features">
+                            <span>🛏️ 3 Beds</span>
+                            <span>🛁 2 Baths</span>
+                            <span>📐 180 m²</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 3: For Sale -->
+                <div class="property-card" data-category="sale">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600" alt="Family Home in Old Airport">
+                        <span class="property-badge">For Sale</span>
+                    </div>
+                    <div class="property-info">
+                        <div class="property-price">12,800,000 Birr</div>
+                        <div class="property-address">Old Airport, Addis Ababa</div>
+                        <div class="property-features">
+                            <span>🛏️ 4 Beds</span>
+                            <span>🛁 3 Baths</span>
+                            <span>📐 380 m²</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 4: For Sale -->
+                <div class="property-card" data-category="sale">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=600" alt="Penthouse in Sarbet">
+                        <span class="property-badge">For Sale</span>
+                    </div>
+                    <div class="property-info">
+                        <div class="property-price">28,000,000 Birr</div>
+                        <div class="property-address">Sarbet, Addis Ababa</div>
+                        <div class="property-features">
+                            <span>🛏️ 4 Beds</span>
+                            <span>🛁 4 Baths</span>
+                            <span>📐 320 m²</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 5: For Rent -->
+                <div class="property-card" data-category="rent">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600573472592-401b489a3cdc?w=600" alt="Apartment in Meskel Flower">
+                        <span class="property-badge rent">For Rent</span>
+                    </div>
+                    <div class="property-info">
+                        <div class="property-price">35,000 Birr/mo</div>
+                        <div class="property-address">Meskel Flower, Addis Ababa</div>
+                        <div class="property-features">
+                            <span>🛏️ 2 Beds</span>
+                            <span>🛁 2 Baths</span>
+                            <span>📐 140 m²</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 6: Sold -->
+                <div class="property-card" data-category="sold">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=600" alt="Villa in CMC">
+                        <span class="property-badge sold">Sold</span>
+                    </div>
+                    <div class="property-info">
+                        <div class="property-price">18,200,000 Birr</div>
+                        <div class="property-address">CMC, Addis Ababa</div>
+                        <div class="property-features">
+                            <span>🛏️ 6 Beds</span>
+                            <span>🛁 5 Baths</span>
+                            <span>📐 520 m²</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-40">
+                <p style="margin-bottom: 20px;">Looking for something specific? Contact Mahi for exclusive listings and off-market properties.</p>
+                <a href="contact.html" class="btn btn-secondary">Contact Mahi</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html"><img src="image.png" alt="Mahi Real Estate Logo" class="footer-logo-img"></a>
+                    <p>Your trusted real estate partner in Addis Ababa. Helping families find their dream homes and investors discover profitable opportunities since 2014.</p>
+                </div>
+                <div class="footer-nav">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="listings.html">Properties</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Buy a Home</a></li>
+                        <li><a href="services.html">Sell a Home</a></li>
+                        <li><a href="services.html">Rentals</a></li>
+                        <li><a href="services.html">Investment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p>📞 +251 911 234 567</p>
+                    <p>✉️ mahi@realestate.et</p>
+                    <p>📍 Bole, Addis Ababa, Ethiopia</p>
+                    <p>Available 24/7 for your real estate needs</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mahi Real Estate. All rights reserved. | Addis Ababa, Ethiopia</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/251911234567" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <span>💬</span>
+        <span class="whatsapp-tooltip">Chat on WhatsApp</span>
+    </a>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Dark Mode Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
+        
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            html.setAttribute('data-theme', savedTheme);
+        }
+        
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+
+        // Page Transitions
+        const pageTransition = document.getElementById('pageTransition');
+        const internalLinks = document.querySelectorAll('a[href^="index"], a[href^="listings"], a[href^="about"], a[href^="services"], a[href^="testimonials"], a[href^="contact"]');
+
+        internalLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                const href = link.getAttribute('href');
+                if (href && !href.startsWith('#')) {
+                    e.preventDefault();
+                    pageTransition.classList.add('active');
+                    
+                    setTimeout(() => {
+                        window.location.href = href;
+                    }, 400);
+                }
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            document.body.classList.add('fade-in');
+        });
+
+        // Filter functionality
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const propertyCards = document.querySelectorAll('.property-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filter = btn.getAttribute('data-filter');
+
+                propertyCards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                        card.style.display = 'block';
+                        card.style.opacity = '0';
+                        setTimeout(() => {
+                            card.style.transition = 'opacity 0.3s ease';
+                            card.style.opacity = '1';
+                        }, 10);
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

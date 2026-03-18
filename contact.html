@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Mahi Real Estate - Addis Ababa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Page Transition Overlay -->
+    <div class="page-transition-overlay" id="pageTransition"></div>
+
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <span class="moon">🌙</span>
+        <span class="sun">☀️</span>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo-link"><img src="image.png" alt="Mahi Real Estate Logo" class="logo-img"></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="listings.html">Properties</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="min-height: 40vh; padding: 120px 0 60px;">
+        <div class="container">
+            <div class="hero-content" style="max-width: 100%; text-align: center;">
+                <h1>Contact Mahi</h1>
+                <p>Ready to find your dream home? I'm here to help 24/7</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section>
+        <div class="container">
+            <div class="contact-content">
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h3 style="margin-bottom: 25px; color: var(--navy);">Send a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="+251 911 234 567">
+                        </div>
+                        <div class="form-group">
+                            <label for="interest">I'm interested in:</label>
+                            <select id="interest" name="interest" style="width: 100%; padding: 14px; border: 2px solid var(--gray); border-radius: 4px; font-size: 1rem; background: var(--white);">
+                                <option value="buying">Buying a Home</option>
+                                <option value="selling">Selling a Home</option>
+                                <option value="renting">Renting</option>
+                                <option value="investing">Investment Property</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" placeholder="Tell me about what you're looking for... Any specific neighborhoods, budget, timeline, etc."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-secondary" style="width: 100%;">Send Message</button>
+                    </form>
+                    <p id="formStatus" style="margin-top: 20px; text-align: center; display: none;"></p>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h3 style="margin-bottom: 25px; color: var(--navy);">Get in Touch</h3>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p><a href="tel:+251911234567">+251 911 234 567</a></p>
+                            <p style="font-size: 0.9rem; color: var(--text-muted);">Available 24/7 - Call or Text</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p><a href="mailto:mahi@realestate.et">mahi@realestate.et</a></p>
+                            <p style="font-size: 0.9rem; color: var(--text-muted);">Response within 2 hours</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h4>Office Address</h4>
+                            <p>Bole Road, Behind DH Geda Tower</p>
+                            <p>Addis Ababa, Ethiopia</p>
+                            <p style="font-size: 0.9rem; color: var(--text-muted);">By appointment</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">🕐</div>
+                        <div class="contact-details">
+                            <h4>Availability</h4>
+                            <p>Monday - Sunday: 24/7</p>
+                            <p style="font-size: 0.9rem; color: var(--text-muted);">Real estate doesn't sleep, and neither do I</p>
+                        </div>
+                    </div>
+
+                    <!-- Map -->
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.776123456789!2d38.7742!3d8.9806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85cef5ab0001%3A0x1234567890abcdef!2sBole%2C%20Addis%20Ababa!5e0!3m2!1sen!2set!4v1234567890000!5m2!1sen!2set" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Response Promise -->
+    <section class="bg-light">
+        <div class="container">
+            <div style="background: var(--white); padding: 50px; border-radius: 12px; text-align: center; box-shadow: var(--shadow);">
+                <h3 style="margin-bottom: 20px;">My Promise to You</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; margin-top: 30px;">
+                    <div>
+                        <div style="font-size: 2.5rem; margin-bottom: 10px;">⚡</div>
+                        <h4>Fast Response</h4>
+                        <p style="font-size: 0.95rem;">I respond to all inquiries within 2 hours, guaranteed.</p>
+                    </div>
+                    <div>
+                        <div style="font-size: 2.5rem; margin-bottom: 10px;">🤝</div>
+                        <h4>No Pressure</h4>
+                        <p style="font-size: 0.95rem;">I'm here to guide you, not push you into decisions.</p>
+                    </div>
+                    <div>
+                        <div style="font-size: 2.5rem; margin-bottom: 10px;">💯</div>
+                        <h4>100% Commitment</h4>
+                        <p style="font-size: 0.95rem;">Your goals become my goals. I'm with you until the end.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <h2>Before You Contact</h2>
+                <p>Quick answers to common questions</p>
+            </div>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div style="background: var(--gray-light); padding: 25px; margin-bottom: 15px; border-radius: 8px;">
+                    <h4 style="margin-bottom: 10px; color: var(--navy);">Do I need to pre-qualify for a mortgage before contacting you?</h4>
+                    <p style="margin: 0;">Not necessarily! I can connect you with trusted lenders to get pre-qualified. However, having a pre-qualification letter makes your offer stronger when we find the right property.</p>
+                </div>
+                <div style="background: var(--gray-light); padding: 25px; margin-bottom: 15px; border-radius: 8px;">
+                    <h4 style="margin-bottom: 10px; color: var(--navy);">How much does it cost to work with you?</h4>
+                    <p style="margin: 0;">For buyers - my services are completely free (commission is paid by the seller). For sellers, I charge a competitive commission rate that includes full marketing, staging advice, and transaction management.</p>
+                </div>
+                <div style="background: var(--gray-light); padding: 25px; border-radius: 8px;">
+                    <h4 style="margin-bottom: 10px; color: var(--navy);">Can you help me if I'm outside of Addis Ababa?</h4>
+                    <p style="margin: 0;">Absolutely! I work with clients from all over Ethiopia and abroad. I can provide virtual tours, video calls, and handle all paperwork remotely until you're ready to visit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html"><img src="image.png" alt="Mahi Real Estate Logo" class="footer-logo-img"></a>
+                    <p>Your trusted real estate partner in Addis Ababa. Helping families find their dream homes and investors discover profitable opportunities since 2014.</p>
+                </div>
+                <div class="footer-nav">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="listings.html">Properties</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Buy a Home</a></li>
+                        <li><a href="services.html">Sell a Home</a></li>
+                        <li><a href="services.html">Rentals</a></li>
+                        <li><a href="services.html">Investment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p>📞 +251 911 234 567</p>
+                    <p>✉️ mahi@realestate.et</p>
+                    <p>📍 Bole, Addis Ababa, Ethiopia</p>
+                    <p>Available 24/7 for your real estate needs</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mahi Real Estate. All rights reserved. | Addis Ababa, Ethiopia</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/251911234567" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <span>💬</span>
+        <span class="whatsapp-tooltip">Chat on WhatsApp</span>
+    </a>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Dark Mode Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
+        
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            html.setAttribute('data-theme', savedTheme);
+        }
+        
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+
+        // Page Transitions
+        const pageTransition = document.getElementById('pageTransition');
+        const internalLinks = document.querySelectorAll('a[href^="index"], a[href^="listings"], a[href^="about"], a[href^="services"], a[href^="testimonials"], a[href^="contact"]');
+
+        internalLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                const href = link.getAttribute('href');
+                if (href && !href.startsWith('#')) {
+                    e.preventDefault();
+                    pageTransition.classList.add('active');
+                    
+                    setTimeout(() => {
+                        window.location.href = href;
+                    }, 400);
+                }
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            document.body.classList.add('fade-in');
+        });
+
+        // Form submission
+        const contactForm = document.getElementById('contactForm');
+        const formStatus = document.getElementById('formStatus');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            
+            // Show success message (in production, this would send to a server)
+            formStatus.style.display = 'block';
+            formStatus.innerHTML = `<strong style="color: var(--navy);">Thank you, ${name}!</strong><br>Your message has been sent. I'll get back to you within 2 hours.`;
+            formStatus.style.background = 'rgba(198, 162, 62, 0.2)';
+            formStatus.style.padding = '20px';
+            formStatus.style.borderRadius = '8px';
+            
+            // Reset form
+            contactForm.reset();
+        });
+    </script>
+</body>
+</html>
